@@ -1,7 +1,7 @@
-# Home Assistant + Watchtower (Docker Compose)
+# Homebridge + Watchtower (Docker Compose)
 
-This project runs [Home Assistant](https://www.home-assistant.io/) with [Watchtower](https://containrrr.dev/watchtower/) for automatic updates, using Docker Compose.  
-Designed for Ubuntu 24.04 with the latest Docker engine.
+This project runs [Homebridge](https://homebridge.io/) with [Watchtower](https://containrrr.dev/watchtower/) for automatic updates, using Docker Compose.  
+Designed for Ubuntu 24.04 with the latest Docker engine.  
 
 ---
 
@@ -18,7 +18,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
   sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
-# Add repository
+# Add Docker repository
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
   https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
